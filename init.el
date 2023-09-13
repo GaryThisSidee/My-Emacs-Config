@@ -13,7 +13,7 @@
 ;; Set up the visible-bell
 (setq visible-bell t)
 
-(set-face-attribute 'default nil :font "JetBrainsMono Nerd Font" :height 180)
+(set-face-attribute 'default nil :font "Fira Code" :height 180)
 
 (load-theme 'wombat)
 
@@ -136,25 +136,10 @@
     ([remap descibe-variable] . counsel-describe-variable)
     ([remap describe-key] . helpful-key))
 
-(use-package nordic-night-theme
+             
+(use-package doom-themes
   :ensure t
   :config
+  (load-theme 'doom-laserwave t))
 
-  ;; Use this for the darker version
-  ;; (load-theme 'nordic-midnight t)
 
-  (load-theme 'nordic-night t))
-
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(package-selected-packages
-   '(nordic-night-theme base16-theme timu-rouge-theme doom-themes helpful which-key rainbow-delimiters nyan-mode ivy-rich doom-modeline counsel corfu)))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
